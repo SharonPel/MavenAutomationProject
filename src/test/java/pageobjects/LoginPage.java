@@ -27,10 +27,6 @@ public class LoginPage extends MainPage {
 	
 	@FindBy(css = ".form-error")
 	private WebElement errorPass;
-	
-	//	 login
-	//	@FindBy(css = ".sign-in-form__signup-button>a>span")
-	//	private WebElement signupBtn;
 
 	public LoginPage(WebDriver driver) {
 		super(driver);

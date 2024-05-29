@@ -33,14 +33,14 @@ public class SignupTest extends ApplicationBaseTest {
 		};
 		return myData;
 	}
-}
 
-//	@Test
-//	public void tc_06SignUpSuccessful() {
-//		mainPage.moveToLogIn();
-//		loginPage.moveToSignup();
-//		signupPage.signup("Sharon", "Pel", "shar123@gmail.com", "Shalom11");
-//		String expected = "Confirmation was sent";
-//		String actual = signupPage.confirmationMsg();
-//		Assert.assertEquals(actual, expected);
-//	}
+	@Test
+	public void tc_06SignUpSuccessful() {
+		mainPage.moveToLogIn();
+		loginPage.moveToSignup();
+		signupPage.signup1("Sharon", "Pel", "shar123@gmail.com", "Shalom11");
+		String expected = "Confirmation was sent";
+		String actual = signupPage.confirmationMsg();
+		Assert.assertEquals(actual, expected);
+	}
+}

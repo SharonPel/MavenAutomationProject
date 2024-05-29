@@ -39,17 +39,6 @@ public class SignupPage extends MainPage {
 		super(driver);
 	}
 
-	// public void signup(String firstName, String lastName, String email, String
-	// password) {
-	// fillTextClearAllText(firstNameField, firstName);
-	// fillTextClearAllText(lastNameField, lastName);
-	// fillTextClearAllText(emailField, email);
-	// fillTextClearAllText(passwordField, password);
-	// click(showPassword);
-	// click(checkBoxSignUp);
-	// click(submitBtn);
-	// }
-
 	// the check-box needs to be cleared after the submit button...
 	public void signup1(String firstName, String lastName, String email, String password) {
 		fillTextClearAllText(firstNameField, firstName);
@@ -91,33 +80,8 @@ public class SignupPage extends MainPage {
 		return error;
 	}
 
-//	public String errorFirstNameMsg() {
-//		waitUntilElementToBeClickable(errorFirstName);
-//		return getText(errorFirstName);
-//	}
-//
-//	public String errorLastNameMsg() {
-//		waitUntilElementToBeClickable(errorLastName);
-//		return getText(errorLastName);
-//	}
-//
-//	public String errorEmailMsg() {
-//		waitUntilElementToBeClickable(errorEmail);
-//		return getText(errorEmail);
-//	}
-//
-//	public String errorPasswordMsg() {
-//		waitUntilElementToBeClickable(errorPassword);
-//		return getText(errorPassword);
-//	}
-
 	public String confirmationMsg() {
 		waitUntilElementToBeClickable(signUpSucc);
 		return getText(signUpSucc);
 	}
-
-	// public void clickOnBackground() {
-	// click(signinBackground);
-	// }
-
 }
